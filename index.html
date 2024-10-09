@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>formulario</title>
+<head>
+  <body>
+    <h1 id="title">Chacra Los Pinos</h1>
+    <p id="description">Te invitamos a pasar la tarde en nuestro complejo, sin dudas, una experiencia única.</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label for ="name" id="name-label">¿Cómo se llama?<input required id="name" type="text" placeholder="ingrese su nombre aquí"></label>
+      
+      <label for="email" id="email-label">¿Cúal es su Gmail?<input required id="email" type="email" placeholder="ingrese su gmail aquí"></label>
+      
+      <label id="number-label" for="age">¿Qué edad tiene?<input required id="number" type="number" min="16" max="96" placeholder="ingrese su edad aquí"></label>
+
+      <label>seleccione que desea alquilar: <select id="dropdown">
+        <option value="">seleccione una</option>
+        <option value="1">cancha de futbol</option>
+        <option value="2">cancha de paddle</option>
+        <option value="3">quincho de eventos</option>
+        <option value="4">pileta</option>
+        <option value="5">quincho + cancha</option>
+        <option value="6">quincho + pileta</option>
+      </select><label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Metodo de pago:</legend>
+      <label for="credito"><input id="credito" class="inline" value="credito" type="radio" name="seleccion" checked>tarjeta de credito</label>
+      <label for="debito"><input id="debito" class="inline" value="debito" type="radio" name="seleccion">tarjeta de debito</label>
+      <label for="trans"><input  class="inline" id="trans" value="transac" type="radio" name="seleccion">transaccion</label>
+      <label for="efec"><input class="inline" id="efec" value="efectivo" type="radio" name="seleccion">efectivo</label>
+      </fieldset>
+
+<fieldset>
+  <legend>Seleccione el horario(s) de alquiler:</legend>
+      <label><input class="inline" type="checkbox" value="14">14:00 a 15:00</label>
+      <label><input class="inline" type="checkbox" value="15">15:00 a 16:00</label>
+      <label><input class="inline" type="checkbox" value="16">16:00 a 17:00</label>
+      <label><input class="inline" type="checkbox" value="17">17:00 a 18:00</label>
+      <label><input class="inline" type="checkbox" value="18">18:00 a 19:00</label>
+      <label><input class="inline" type="checkbox" value="19">19:00 a 20:00</label>
+      <label><input class="inline" type="checkbox" value="20">20:00 a 21:00</label>
+       </fieldset>
+       
+       <fieldset>
+         <legend>si desea algun servicio adicional para el quincho de eventos agregelo abajo: </legend>
+      <textarea placeholder="'decoracion de cumpleaños infantil...'"></textarea>
+      <input type="submit" id="submit"></input>
+      </fieldset>
+    </form>
+  </body>
+</html>
